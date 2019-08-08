@@ -104,11 +104,16 @@
 		<div class="container">
 			<h2>Our clients</h2>
 			<div class="clients-flex">
-				<img src="img/clients-google.png">
-				<img src="img/clients-sams.png">
-				<img src="img/clients-flickr.png">
-				<img src="img/clients-four.png">
-				<img src="img/clients-pint.png">
+				<img class="clients-google" src="img/clients-google.png">
+				<img class="clients-google-color color" src="img/clients-google-color.png">
+				<img class="clients-sams" src="img/clients-sams.png">
+				<img class="clients-sams-color color" src="img/clients-sams-color.png">
+				<img class="clients-flickr" src="img/clients-flickr.png">
+				<img class="clients-flickr-color color" src="img/clients-flickr-color.png">
+				<img class="clients-four" src="img/clients-four.png">
+				<img class="clients-four-color color" src="img/clients-four-color.png">
+				<img class="clients-pint" src="img/clients-pint.png">
+				<img class="clients-pint-color color" src="img/clients-pint-color.png">
 			</div>
 		</div>
 	</section>
@@ -116,41 +121,34 @@
 		<div class="container">
 			<h2>About us</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-			<div class="about-item-flex">
-				<div class="about-item">
-					<img src="">
+			<div class="about-item-grid">
+				<div class="about-item team">
+					<img src="img/team1.png">
 					<div class="about-item-layout">
 						<a href="#"></a>
 						<h3>John</h3>
 						<p>CEO/Founder</p>
 					</div>
 				</div>
-			</div>
-			<div class="about-item-flex">
-				<div class="about-item">
-					<img src="">
+				<div class="about-item team">
+					<img src="img/team2.png">
 					<div class="about-item-layout">
 						<a href="#"></a>
 						<h3>John</h3>
 						<p>CEO/Founder</p>
 					</div>
 				</div>
-			</div>
-			<div class="about-item-flex">
-				<div class="about-item">
-					<img src="">
+				<div class="about-item team">
+					<img src="img/team3.png">
 					<div class="about-item-layout">
 						<a href="#"></a>
 						<h3>John</h3>
 						<p>CEO/Founder</p>
 					</div>
 				</div>
-			</div>
-			<div class="about-item-flex">
 				<div class="about-item">
 					<h3>We are hiring</h3>
 					<a href="#">Apply</a>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -174,41 +172,42 @@
 		<div class="container">
 			<h2>Get in touch</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+		</div>
 			<div class="info-and-form">
 				<div class="info">
-					<h3>Our location</h3>
-					<p>174 Mimosa ST. NW</p>
-					<p>Casablanca, MA 20370</p>
-					<p>(212) 123 456 7</p>
-					<p>Samir Timezguida</p>
-					<ul class="info-social">
-						<li class="tw"><a href="#"></a></li>
-						<li class="fb"><a href="#"></a></li>
-						<li class="in"><a href="#"></a></li>
-						<li class="v"><a href="#"></a></li>
-						<li class="be"><a href="#"></a></li>
-					</ul>
+					<div class="container">
+						<h3>Our location</h3>
+						<p>174 Mimosa ST. NW</p>
+						<p>Casablanca, MA 20370</p>
+						<p>(212) 123 456 7</p>
+						<p>Samir Timezguida</p>
+						<div class="info-social">
+							<a class="social-tw" href="#"></a>
+							<a class="social-fb" href="#"></a>
+							<a class="social-in" href="#"></a>
+							<a class="social-v" href="#"></a>
+							<a class="social-be" href="#"></a>
+						</div>
+					</div>
 				</div>
 				<aside>
-					<form>
-						<label for="name">Name<input type="text" name="name" id="name"></label>
-						<label for="email">Email<input type="text" name="email" id="email"></label>
-						<label for="message">Message<textarea id="message"></textarea></label>
-						<input type="submit" value="Send">
-					</form>
+					<div class="container">
+						<form>
+							<div class="half-line">
+							<input type="text" name="name" id="name" value="Name">
+							<input type="text" name="email" id="email" value="Email">
+							</div>
+							<textarea id="message" rows="1">Message</textarea>
+							<input type="submit" value="Send">
+						</form>
+					</div>
 				</aside>
 			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
-			<div class="designer">
-				<img src="">
-				<div class="designer-text">
-					<h2>Samir Timezguida.</h2>
-					<p>UI/UX & Web Designer</p>
-				</div>
-			</div>
+			<img src="img/logo-footer.png">				
 			<div class="copyright">
 				<p>2014 &copy; <a href="#">Samir Timezguida.</a> All Rights reserved.</p>
 			</div>
