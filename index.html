@@ -146,7 +146,11 @@
 		</div>
 	</section>
 	<section class="video">
-		<video></video>
+		<video id="video" poster="img/video-poster.jpg" width="100%" height="500px" src="img/video-mp4.mp4">
+			<source src="img/video-mp4.mp4" type='video/mp4'>
+			<source src="img/video-webm.webm" type='video/webm'>
+		</video>
+		<button id="play" onclick="vidplay()"></button>
 	</section>
 	<section class="feature">
 		<div class="container">

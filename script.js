@@ -19,3 +19,15 @@ for (let anchor of anchors) {
     }
   });
 }
+
+ function vidplay() {
+       var video = document.getElementById("video");
+       var button = document.getElementById("play");
+       if (video.paused) {
+          video.play();
+          button.display = none;
+       } else {
+          video.pause();
+          button.textContent = "";
+       }
+    }

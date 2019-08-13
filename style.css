@@ -466,6 +466,24 @@ div.about-item.hiring a:hover {
 	background-color: rgba(34, 34, 34, 0.2);
 }
 
+.video {
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+.video button {
+	display: block;
+	width: 64px;
+	height: 64px;
+	cursor: pointer;
+	background: url(img/video-play.png) no-repeat;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: none;
+}
+
 .feature {
 	padding-top: 115px;
 	padding-bottom: 60px;
