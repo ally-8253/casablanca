@@ -252,6 +252,7 @@ nav.work-nav a {
 	display: block;
 	color: #222222;
 	margin-right: 25px;
+	cursor: pointer;
 }
 
 nav.work-nav a:last-of-type {
@@ -262,7 +263,7 @@ nav.work-nav a:hover {
 	text-shadow: 0 0 .65px #222, 0 0 .65px #222, 0 0 .65px #222; 
 	}
 
-.work-item-flex {
+.tab-item {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -352,6 +353,11 @@ a.work-btn {
 a.work-btn:hover {
 	color: #d87843;
 	border: 3px solid #d87843;
+}
+
+
+.tab-active {
+ color: red; 
 }
 
 .help {

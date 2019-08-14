@@ -55,3 +55,9 @@ $('button').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('active-btn');
 });
+
+$(".tab-item").not(":first").hide();
+$(".tab").click(function() {
+  $(".tab").removeClass("tab-active").eq($(this).index()).addClass("tab-active");
+  $(".tab-item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("tab-active");
