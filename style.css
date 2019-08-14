@@ -580,6 +580,15 @@ div.about-item.hiring a:hover {
 	filter: brightness(50%);
 }
 
+button.active-btn {
+	opacity: 0;
+	border: none;
+}
+
+button.active-btn:hover {
+	opacity: 1;
+}
+
 video[poster] {
      width: 100%;
      min-height: 100%;

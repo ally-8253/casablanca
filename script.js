@@ -50,3 +50,8 @@ $('.nav-btn').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('nav-btn-active');
 });
+
+$('button').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('active-btn');
+});
