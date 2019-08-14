@@ -25,7 +25,7 @@ for (let anchor of anchors) {
        var button = document.getElementById("play");
        if (video.paused) {
           video.play();
-          button.display = none;
+          button.textContent = "";
        } else {
           video.pause();
           button.textContent = "";

@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="http://www.fontsquirrel.com/fonts/amble">
     <link href="http://bit.ly/1rxB4i6">
+    <link rel="stylesheet" href="swiper-master/swiper.min.css">
+    <link rel="stylesheet" href="swiper-master/swiper.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />  
     <meta charset="utf-8">  
@@ -139,7 +141,7 @@
 					</div>
 				</div>
 				<div class="about-item hiring">
-					<h3>We are<br>hiring</h3>
+					<h3>We are hiring</h3>
 					<a href="#">Apply</a>
 				</div>
 			</div>
@@ -155,8 +157,47 @@
 	<section class="feature">
 		<div class="container">
 			<h2>Why choose us</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-			<div class="slider"></div>
+			<p class="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide slide1">
+						<div class="slide-section">
+							<img src="img/slide-section-1.png">
+							<h3>App Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</div>
+						<div class="slide-section">
+							<img src="img/slide-section-2.png">
+							<h3>Responsive layout</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</div>
+						<div class="slide-section">
+							<img src="img/slide-section-3.png">
+							<h3>Pixel Perfect Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</div>
+					</div>
+					<div class="swiper-slide slide2">
+						<div class="slide-section">
+							<img src="img/slide-section-1.png">
+							<h3>App Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</div>
+						<div class="slide-section">
+							<img src="img/slide-section-2.png">
+							<h3>Responsive layout</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</div>
+						<div class="slide-section">
+							<img src="img/slide-section-3.png">
+							<h3>Pixel Perfect Design</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+				
 		</div>
 	</section>
 	<section class="quote">
@@ -210,4 +251,15 @@
 		</div>
 	</footer>
 	<script type="text/javascript" src="script.js"></script>
+	<script src="swiper-master/swiper.min.js"></script>
+	<script>
+		 var mySwiper = new Swiper ('.swiper-container', {
+		 	loop: true,
+		 	spaceBetween: 30,
+		 	pagination: {
+		 		el: '.swiper-pagination',
+		 		clickable: true,
+		 	},
+		 })
+	</script>
 </body>
