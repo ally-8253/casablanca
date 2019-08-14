@@ -18,6 +18,7 @@ body {
 	max-width: 1170px;
 	height: 100%;
 	margin: 0 auto;
+	position: relative;
 }
 
 header {
@@ -27,12 +28,97 @@ header {
 	background-size: cover;
 }
 
+.main-nav {
+	width: 20%;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(203, 98, 79, 1);
+	transition: 0.5s;
+	transform: translateX(-100%);
+	z-index: 100;
+}
+
+.main-nav-active {
+	transform: translateX(0%);
+}
+
+.nav-btn {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: -80px;
+	top: 60px;
+	cursor: pointer;
+}
+
+.nav-btn span,
+.nav-btn span::before,
+.nav-btn span::after {
+	display: block;
+	position: absolute;
+	background-color: #fff;
+	top: 50%;
+	width: 30px;
+	height: 4px;
+	margin-top: -2px;
+}
+
+.nav-btn span::before,
+.nav-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+.nav-btn span::before {
+  transform: translateY(-10px);
+}
+.nav-btn span::after {
+  transform: translateY(10px);
+}
+
+.nav-btn-active span {
+	height: 0;
+}
+
+.nav-btn-active span:before {
+  transform: rotate(-45deg);
+}
+.nav-btn-active span:after {
+  transform: rotate(45deg);
+}
+
+.nav-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: #fffefe;
+	font-family: 'Big John', sans-serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.nav-list a:hover  {
+	filter: brightness(30%);
+}
+
+
 .intro-text {
 	color: #fffefe;
 	width: 58%;
 	height: 35%;
 	margin: 0 auto;
-	margin-top: 15%;
+	margin-top: 12%;
 	margin-bottom: 15%;
 	padding: 1%;
 	text-align: center;
@@ -66,6 +152,10 @@ a.mouse-scroll {
 	height: 48px;
 	width: 30px;
 	margin: 0 auto;
+}
+
+a.mouse-scroll:hover {
+	filter: brightness(80%);
 }
 
 .introduction {
@@ -398,7 +488,7 @@ div.about-item.team:hover .about-item-layout {
 }
 
 div.about-item.team:hover img {
-	filter: grayscale(100%);
+	filter: grayscale(100%) brightness(40%);
 }
 
 .about-item-layout::before {
@@ -486,6 +576,10 @@ div.about-item.hiring a:hover {
 	border: none;
 }
 
+.video button:hover {
+	filter: brightness(50%);
+}
+
 video[poster] {
      width: 100%;
      min-height: 100%;
@@ -525,7 +619,7 @@ video[poster] {
 	font-size: 1.1em;
 	line-height: 36px;
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 
 .swiper-slide {
@@ -687,6 +781,10 @@ video[poster] {
 	background-position: 0 50%;
 }
 
+.info .info-social a:hover {
+	filter: brightness(0%);
+}
+
 aside {
 	background-color: #e4e4e4;
 	padding-top: 100px;
@@ -775,4 +873,8 @@ footer img {
 .copyright a {
 	text-decoration: none;
 	color: #d87843;
+}
+
+.copyright a:hover {
+	color: #fff;
 }

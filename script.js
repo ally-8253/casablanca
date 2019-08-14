@@ -31,3 +31,22 @@ for (let anchor of anchors) {
           button.textContent = "";
        }
     }
+
+
+$('.nav-btn').on('click', function(e) {
+  e.preventDefault();
+  $('.main-nav').toggleClass('main-nav-active');
+})
+
+$('.nav-list a').click(function() {
+        if ( $('.main-nav').hasClass('main-nav-active')) {
+         $('.main-nav').removeClass('main-nav-active');
+         $('.nav-btn').removeClass('nav-btn-active')
+        }
+     }) 
+
+
+$('.nav-btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('nav-btn-active');
+});
