@@ -266,16 +266,21 @@ nav.work-nav a:hover {
 .tab-item {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-content: space-between;
 	width: 100%;
-	height: 860px;
+	height: 420px;
 	margin-bottom: 80px;
+}
+
+.tab-item:first-of-type {
+	height: 860px;
+	justify-content: space-between;
 }
 
 .work-item {
 	width: 31%;
-	height: 49%;
+	height: 420px;
 	background-color: #222;
 	position: relative;
 }
