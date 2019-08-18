@@ -20,17 +20,16 @@ for (let anchor of anchors) {
   });
 }
 
- function vidplay() {
-       var video = document.getElementById("video");
-       var button = document.getElementById("play");
-       if (video.paused) {
-          video.play();
-          button.textContent = "";
-       } else {
-          video.pause();
-          button.textContent = "";
-       }
-    }
+$(function(){
+
+  $("#video-play").click(function(){
+    var dataYoutube = $(this).parents('.js-video').attr('data-youtube');
+    $(this).parents('.js-video').html('<iframe src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay="1" frameborder="0" width="100%" height="500px" allowfullscreen></iframe>')
+  });
+
+});
+
+
 
 
 $('.nav-btn').on('click', function(e) {
@@ -51,10 +50,6 @@ $('.nav-btn').on('click', function(e) {
   $(this).toggleClass('nav-btn-active');
 });
 
-$('button').on('click', function(e) {
-  e.preventDefault;
-  $(this).toggleClass('active-btn');
-});
 
 $(".tab-item").not(":first").hide();
 $(".tab").click(function() {

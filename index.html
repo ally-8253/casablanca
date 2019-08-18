@@ -25,7 +25,7 @@
 		 		<a href="#contact">Contacts</a>
 		 	</nav>			
 		 </div>
-		 <div class="container">
+		 <div class="container cont-intro">
 		 <div class="intro-text">
 			<h1>We've got the talent</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -208,11 +208,11 @@
 		</div>
 	</section>
 	<section class="video">
-		<video id="video" poster="img/video-poster.jpg" width="100%" height="500px" src="img/video-mp4.mp4">
-			<source src="img/video-mp4.mp4" type='video/mp4'>
-			<source src="img/video-webm.webm" type='video/webm'>
-		</video>
-		<button id="play" onclick="vidplay()"></button>
+		<div class="video js-video" data-youtube="JBkYgNNSQFE">
+			<img class="video-poster" src="img/video-poster.jpg">
+			<button id="video-play" class="video-play" type="button"></button>
+		</div>
+		
 	</section>
 	<section class="feature" id="feature">
 		<div class="container">
