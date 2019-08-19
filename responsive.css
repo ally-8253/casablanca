@@ -190,4 +190,14 @@ aside form input[type="submit"] {
 	height: 50px;
 }
 
+aside form input,
+aside form textarea,
+footer {
+	font-size: 1.5em;
+}
+
+.work-item {
+	width: 100%;
+}
+
 }
