@@ -645,11 +645,6 @@ section.video {
 	margin-bottom: 80px;
 }
 
-.choose__block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .slide {
     width: 100%;
