@@ -94,7 +94,7 @@ font-size: 10px;
 }
 
 div.about-item {
-	margin-right: 0;
+	margin-right: 7%;
 	margin-bottom: 5%;
 }
 
@@ -116,6 +116,12 @@ aside form input[type="submit"] {
 @media screen and (max-width: 481px) {
 .container {
 width: 310px;
+}
+
+nav.work-nav a {
+	font-size: 1.5em;
+	text-align: center;
+	margin-right: 10px;
 }
 
 .main-nav {
@@ -151,8 +157,8 @@ nav.work-nav a {
 }
 
 div.about-item {
-	margin-bottom: 5%;
-}
+	margin-right: 0;
+?}
 
 div.about-item img {
 	margin-right: 0;
