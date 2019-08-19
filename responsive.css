@@ -230,4 +230,13 @@ h2,
 	font-size: 2em !important;
 }
 
+.intro-text h1::after {
+	margin-bottom: 15%;
+	margin-top: 15%;
+}
+.intro-text p {
+	font-size: 1.5em;
+}
+
+
 }
