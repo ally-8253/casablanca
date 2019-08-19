@@ -118,6 +118,10 @@ aside form input[type="submit"] {
 width: 310px;
 }
 
+.main-nav {
+	width: 50%;
+}
+
 .intro-text {
 	margin-bottom: 40%;
 }
