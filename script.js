@@ -56,3 +56,34 @@ $(".tab").click(function() {
   $(".tab").removeClass("tab-active").eq($(this).index()).addClass("tab-active");
   $(".tab-item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("tab-active");
+
+
+$(document).ready(function() {
+    $('.slider').slick({
+
+        infinite: true,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 750,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+                breakpoint: 968,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 770,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+
+                }
+            }
+        ]
+    });
+});

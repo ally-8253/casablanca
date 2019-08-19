@@ -3,17 +3,16 @@
 <head>
 	<title>Casablanca</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="http://www.fontsquirrel.com/fonts/amble">
     <link href="http://bit.ly/1rxB4i6">
-    <link rel="stylesheet" href="swiper-master/swiper.min.css">
-    <link rel="stylesheet" href="swiper-master/swiper.css">
+    <link rel="stylesheet" href="slick-slider/slick.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />  
     <meta charset="utf-8">  
 </head>
 <body>
-	<header>
-		
+	<header>		
 		 <div class="main-nav">
 		 	<a class="nav-btn"><span></span></a>
 		 	<nav class="nav-list">
@@ -44,7 +43,7 @@
 	</section>
 	<section class="creativity">
 		<div class="container">
-			<a href="#">Pure creativity.</a>
+			<a class="big-btn" href="#">Pure creativity.</a>
 		</div>
 	</section>
 	<section class="work" id="work">
@@ -159,7 +158,7 @@
 	</section>
 	<section class="help">
 		<div class="container">
-			<a href="#">We're here to help.</a>
+			<a class="big-btn" href="#">We're here to help.</a>
 		</div>
 	</section>
 	<section class="clients" id="client">
@@ -208,61 +207,53 @@
 		</div>
 	</section>
 	<section class="video">
+		<div class="container">
 		<div class="video js-video" data-youtube="JBkYgNNSQFE">
-			<img class="video-poster" src="img/video-poster.jpg">
 			<button id="video-play" class="video-play" type="button"></button>
 		</div>
-		
+		</div>
 	</section>
 	<section class="feature" id="feature">
 		<div class="container">
 			<h2>Why choose us</h2>
 			<p class="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide slide1">
-						<div class="slide-section">
-							<img src="img/slide-section-1.png">
-							<h3>App Design</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						</div>
-						<div class="slide-section">
-							<img src="img/slide-section-2.png">
-							<h3>Responsive layout</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						</div>
-						<div class="slide-section">
-							<img src="img/slide-section-3.png">
-							<h3>Pixel Perfect Design</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						</div>
-					</div>
-					<div class="swiper-slide slide2">
-						<div class="slide-section">
-							<img src="img/slide-section-1.png">
-							<h3>App Design</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						</div>
-						<div class="slide-section">
-							<img src="img/slide-section-2.png">
-							<h3>Responsive layout</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						</div>
-						<div class="slide-section">
-							<img src="img/slide-section-3.png">
-							<h3>Pixel Perfect Design</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-				
+			<div class="slider">
+                        <div class="slider-item slider-item1">
+                            <img src="img/slide-section-1.png">
+                            <h3>App Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ilabore et dolore ilabore et dolore.</p>
+                        </div>
+                        <div class="slider-item slider-item2">
+                            <img src="img/slide-section-2.png">
+                            <h3>Responsive Layout</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ilabore et dolore ilabore et dolore.</p>
+                        </div>
+                        <div class="slider-item slider-item3">
+                            <img src="img/slide-section-3.png">
+                            <h3>Pixel Perfect Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ilabore et dolore ilabore et dolore.</p>
+                        </div>
+                        <div class="slider-item slider-item1">
+                            <img src="img/slide-section-1.png">
+                            <h3>App Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ilabore et dolore ilabore et dolore.</p>
+                        </div>
+                        <div class="slider-item slider-item2">
+                            <img src="img/slide-section-2.png">
+                            <h3>Responsive Layout</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ilabore et dolore ilabore et dolore.</p>
+                        </div>
+                        <div class="slider-item slider-item3">
+                            <img src="img/slide-section-3.png">
+                            <h3>Pixel Perfect Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ilabore et dolore ilabore et dolore.</p>
+                        </div>
+                    </div>
 		</div>
 	</section>
 	<section class="quote">
 		<div class="container">
-			<a href="#">Get a quote now.</a>
+			<a class="big-btn" href="#">Get a quote now.</a>
 		</div>
 	</section>
 	<section class="contact" id="contact">
@@ -312,15 +303,6 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	<script src="swiper-master/swiper.min.js"></script>
-	<script>
-		 var mySwiper = new Swiper ('.swiper-container', {
-		 	loop: true,
-		 	spaceBetween: 30,
-		 	pagination: {
-		 		el: '.swiper-pagination',
-		 		clickable: true,
-		 	},
-		 })
-	</script>
+	<script src="slick-slider/slick.min.js"></script>
 </body>
+</html>
