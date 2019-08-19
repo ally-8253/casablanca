@@ -40,15 +40,31 @@ $('.nav-btn').on('click', function(e) {
 $('.nav-list a').click(function() {
         if ( $('.main-nav').hasClass('main-nav-active')) {
          $('.main-nav').removeClass('main-nav-active');
-         $('.nav-btn').removeClass('nav-btn-active')
+         $('.nav-btn').removeClass('nav-btn-active');
         }
      }) 
+
+$('body').click(function(e) {
+    $('.main-nav').removeClass('main-nav-active');
+    $('.nav-btn').removeClass('nav-btn-active');
+});
+
+$('.main-nav').click(function(e) {
+    e.stopPropagation();
+});
+
+
+
 
 
 $('.nav-btn').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('nav-btn-active');
 });
+
+
+
+
 
 
 $(".tab-item").not(":first").hide();

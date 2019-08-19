@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: 'Amble Light', sans-serif;
+	font-family: 'Amble', sans-serif;
 	font-size: 18px;
 	color: #222222;
 	letter-spacing: 2px;
@@ -126,17 +126,19 @@ div.container.cont-intro {
 
 .intro-text {
 	color: #fffefe;
-	width: 58%;
+	width: 65%;
 	height: 35%;
 	margin-bottom: 15%;
 	text-align: center;
 }
 
 .intro-text h1 {
-	font-family: 'Big John', sans-serif;
 	font-size: 2.7em;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-family: 'Big John', sans-serif;
+    text-align: center;
+    line-height: 3.75rem;
 	}
 
 .intro-text h1::after {
@@ -200,8 +202,9 @@ a.mouse-scroll:hover {
 
 .creativity {
 	height: 500px;
-	background: url(img/background-creativity.jpg) no-repeat center center;
+	background:  url(img/background-creativity.jpg) no-repeat center;
 	background-size: cover;
+	filter: brightness(0.8);
 }
 
 .creativity a {
@@ -257,7 +260,7 @@ nav.work-nav {
 
 nav.work-nav a {
 	text-decoration: none;
-	font-family: 'Slim Joe', sans-serif;
+	font-family: 'Big John', sans-serif;
 	text-transform: uppercase;
 	display: block;
 	color: #222222;
@@ -380,8 +383,9 @@ a.work-btn:hover {
 
 .help {
 	height: 500px;
-	background: url(img/background-help.jpg) no-repeat center center;
+	background: url(img/background-help.jpg) no-repeat no-repeat center;
 	background-size: cover;
+	filter: brightness(0.8);
 }
 
 .help a {
@@ -591,7 +595,9 @@ section.video {
 	height: 500px;
 	width: 100%;
 	position: relative;
-	background: url(img/video-poster.jpg) no-repeat;
+	background: url(img/video-poster.jpg) no-repeat center;
+	background-size: cover;
+	filter: brightness(0.8);
 }
 
 
@@ -730,8 +736,9 @@ section.video {
 
 .quote {
 	height: 500px;
-	background: url(img/background-quote.jpg) no-repeat center center;
+	background: url(img/background-quote.jpg) no-repeat center;
 	background-size: cover;
+	filter: brightness(0.8);
 }
 
 .quote a {
