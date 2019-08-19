@@ -186,8 +186,9 @@ h2::after {
 }
 
 aside form input[type="submit"] {
-	width: 100px;
-	height: 50px;
+	width: 130px;
+	height: 60px;
+	font-size: 2em;
 }
 
 aside form input,
@@ -198,6 +199,35 @@ footer {
 
 .work-item {
 	width: 100%;
+}
+
+.work-overlay h3 {
+	font-size: 2em;
+	}
+
+.work-overlay a {
+	font-size: 1.5em;
+}
+
+.about-item-layout p {
+	font-size: 1.5em;
+}
+
+.about-item-layout h3 {
+	font-size: 2em;
+}
+
+div.about-item.hiring h3 {
+	font-size: 2em;
+}
+
+div.about-item.hiring a {
+	font-size: 1.5em;
+}
+
+h2,
+.info > .container h3 {
+	font-size: 2em !important;
 }
 
 }

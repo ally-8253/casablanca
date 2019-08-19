@@ -539,7 +539,7 @@ div.about-item.team:hover img {
 }
 
 .about-item-layout h3 {
-	font-size: 1.3;
+	font-size: 1.3em;
 	font-family: 'Big John', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
