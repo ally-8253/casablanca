@@ -72,9 +72,6 @@ body {
 	grid-template-rows: 230px;
 }
 
-.work-nav a {
-	margin-bottom: 15px;
-}
 
 }
 
@@ -83,16 +80,28 @@ body {
 width: 450px;
 }
 
-body {
-font-size: 10px;
+nav.work-nav a {
+	font-size: 1em;
+	text-align: center;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+nav.work-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .intro-text {
 	margin-bottom: 30%;
 }
 
-.intro-text p {
-	font-size: 14px;
+section.introduction p:first-of-type,
+section.about p.about-p,
+section.feature p:first-of-type,
+section.contact p:first-of-type {
+	width: 90%;
 }
 
 a.big-btn {
@@ -105,9 +114,21 @@ a.big-btn {
 	width: 45%;
 }
 
+.work-overlay h3 {
+	font-size: 1em;
+	margin-top: 0;
+	}
+.work-overlay a {
+	font-size: 1em;
+}
+
 .about-item-grid {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 270px 270px;
+}
+
+.clients {
+	padding-bottom: 80px;
 }
 
 div.about-item {
@@ -117,6 +138,8 @@ div.about-item {
 
 aside form input {
 	width: 400px;
+	margin-right: 0 !important;
+	display: block;
 }
 
 aside form textarea {
@@ -128,6 +151,14 @@ aside form input[type="submit"] {
 	margin-right: 0;
 }
 
+footer img {
+    width: 300px;
+}
+
+footer {
+	height: 250px;
+}
+
 }
 
 @media screen and (max-width: 481px) {
@@ -135,10 +166,36 @@ aside form input[type="submit"] {
 width: 310px;
 }
 
-nav.work-nav a {
-	font-size: 1.5em;
-	text-align: center;
-	margin-right: 10px;
+body {
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+section {
+	padding-top: 70px !important;
+	padding-bottom: 70px !important;
+}
+
+section.introduction p:first-of-type,
+section.about p.about-p,
+section.feature p:first-of-type,
+section.contact p:first-of-type {
+	line-height: 25px;
+}
+
+section.creativity,
+section.help,
+section.quote {
+	height: 300px;
+}
+
+.intro-text h1 {
+	font-size: 25px;
+	line-height: 2rem;
+}
+
+.intro-text p {
+	font-size: 18px;
 }
 
 .main-nav {
@@ -147,6 +204,7 @@ nav.work-nav a {
 
 .intro-text {
 	margin-bottom: 40%;
+	width: 80%;
 }
 
 a.work-btn {
@@ -155,16 +213,15 @@ a.work-btn {
 
 }
 
-nav.work-nav {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+nav.work-nav a {
+	font-size: 16px;
 }
 
-nav.work-nav a {
-	margin-bottom: 5px;
+nav.work-nav {
+	margin-bottom: 20px;
 }
+
+
 
 .about-item-grid {
 	grid-template-columns: 1fr;
@@ -188,13 +245,18 @@ div.about-item.hiring {
 }
 
 footer img {
-    width: 100%;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+footer {
+	height: 200px;
 }
 
 a.big-btn {
 	padding: 15px;
 	width: 250px;
-	height: 50px;
+	height: 60px;
 }
 
 h2::after {
@@ -205,13 +267,17 @@ h2::after {
 aside form input[type="submit"] {
 	width: 130px;
 	height: 60px;
-	font-size: 2em;
+	font-size: 1.2em;
+}
+
+section.contact {
+	padding-bottom: 0 !important;
 }
 
 aside form input,
-aside form textarea,
-footer {
-	font-size: 1.5em;
+aside form textarea{
+	width: 300px;
+	font-size: 1em;
 }
 
 .work-item {
@@ -219,19 +285,15 @@ footer {
 }
 
 .work-overlay h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 	}
 
 .work-overlay a {
-	font-size: 1.5em;
-}
-
-.about-item-layout p {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 .about-item-layout h3 {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 div.about-item.hiring h3 {
@@ -244,21 +306,33 @@ div.about-item.hiring a {
 
 h2,
 .info > .container h3 {
-	font-size: 2em !important;
+	font-size: 1.3em !important;
 }
 
 .intro-text h1::after {
 	margin-bottom: 15%;
 	margin-top: 15%;
 }
-.intro-text p {
-	font-size: 1.5em;
-}
 
 .slider p {
-    font-size: 1.5em;
+    font-size: 18px;
     line-height: 20px;
 }
 
+.feature p.first {
+	margin-bottom: 20px;
+}
+
+div.slider {
+	margin-top: 40px;
+}
+
+.contact > .container > p {
+margin-bottom: 40px;
+}
+
+.info .info-social {
+	margin-bottom: 20px;
+}
 
 }

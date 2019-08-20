@@ -202,8 +202,15 @@ a.mouse-scroll:hover {
 
 .creativity {
 	height: 500px;
-	background: rgba(0, 0, 0, 0.4) url(img/background-creativity.jpg) no-repeat center;
+	background: url(img/background-creativity.jpg) no-repeat center, rgba(0, 0, 0, 0.4);
 	background-size: cover;
+	
+}
+
+.creativity > .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .creativity a {
@@ -212,8 +219,7 @@ a.mouse-scroll:hover {
 	height: 100px;
 	border: #fff 3px solid;
 	padding: 30px 98px;
-	margin: auto;
-	margin-top: 200px;
+	
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
@@ -387,14 +393,18 @@ a.work-btn:hover {
 	filter: brightness(0.8);
 }
 
+.help > .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .help a {
 	display: block;
 	width: 430px;
 	height: 100px;
 	border: #fff 3px solid;
 	padding: 30px 50px;
-	margin: auto;
-	margin-top: 200px;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
@@ -530,7 +540,7 @@ div.about-item.team:hover img {
 	height: 32px;
 	background: url(img/link-team.png) no-repeat;
 	top: 10px;
-	left: 10px;
+	right: 10px;
 	cursor: pointer;
 }
 
@@ -707,7 +717,7 @@ section.video {
 }
 
 .slider p {
-    width: 330px;
+    width: 250px;
     font-size: 0.8em;
     line-height: 30px;
     text-align: center;
@@ -740,14 +750,19 @@ section.video {
 	filter: brightness(0.8);
 }
 
+.quote > .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .quote a {
 	display: block;
 	width: 430px;
 	height: 100px;
 	border: #fff 3px solid;
 	padding: 30px 80px;
-	margin: auto;
-	margin-top: 200px;
+	
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
