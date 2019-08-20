@@ -202,9 +202,8 @@ a.mouse-scroll:hover {
 
 .creativity {
 	height: 500px;
-	background:  url(img/background-creativity.jpg) no-repeat center;
+	background: rgba(0, 0, 0, 0.4) url(img/background-creativity.jpg) no-repeat center;
 	background-size: cover;
-	filter: brightness(0.8);
 }
 
 .creativity a {

@@ -31,7 +31,7 @@ aside {
 
 aside form {
 	position: static;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .about-item-grid {
@@ -72,6 +72,9 @@ body {
 	grid-template-rows: 230px;
 }
 
+.work-nav a {
+	margin-bottom: 15px;
+}
 
 }
 
@@ -82,6 +85,20 @@ width: 450px;
 
 body {
 font-size: 10px;
+}
+
+.intro-text {
+	margin-bottom: 30%;
+}
+
+.intro-text p {
+	font-size: 14px;
+}
+
+a.big-btn {
+	font-size: 20px !important;
+	height: 80px;
+	padding: 25px 80px;
 }
 
 .work-item {

@@ -53,9 +53,13 @@ $('.main-nav').click(function(e) {
     e.stopPropagation();
 });
 
+//ESCAPE
 
-
-
+$('.main-nav').keydown(function(e) {
+    if (e.keyCode == 27) {
+        $('.main-nav').removeClass('main-nav-active');
+    }
+});
 
 $('.nav-btn').on('click', function(e) {
   e.preventDefault;
